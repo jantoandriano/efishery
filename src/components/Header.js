@@ -1,4 +1,5 @@
 import React from "react";
+import IconBars from "../assets/images/icon-bars.png";
 
 const Header = ({ onCollapsed }) => {
   return (
@@ -9,7 +10,7 @@ const Header = ({ onCollapsed }) => {
           className="btn btn-collapse"
           onClick={onCollapsed}
         >
-          <i className="fas fa-bars"></i>
+          <img className={"logo-full"} src={IconBars} alt="Logo Efishery" />
         </button>
         <h3 className="navbar-title">dashboard</h3>
       </div>
