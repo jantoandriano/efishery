@@ -82,7 +82,7 @@ $active: #038767;
         & > a {
           color: #fff;
           border-right: 4px solid lightyellow;
-          background-color: lightslategrey;
+          background-color: lightseagreen;
         }
       }
 
@@ -97,7 +97,7 @@ $active: #038767;
 
         &:hover {
           color: #fff;
-          background: $active;
+          background: lightslategrey;
         }
       }
     }
