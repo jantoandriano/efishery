@@ -1,0 +1,33 @@
+$primary: #1c939b;
+
+.pagination {
+  @media (max-width: 640px) {
+    width: 100%;
+    overflow: auto;
+  }
+
+  .page-item {
+    cursor: pointer;
+    .page-link {
+      color: #212529;
+      border-radius: 6px;
+      margin-left: 5px;
+    }
+    .active {
+      background-color: $primary;
+      border: 1px solid #dee2e6;
+      color: #fff;
+    }
+  }
+
+  .page-btn {
+    border-radius: 6px;
+    background-color: $primary;
+    border: 1px solid #dee2e6;
+  }
+  .page-btn-end {
+    border-radius: 6px;
+    background-color: $primary;
+    border: 1px solid #dee2e6;
+  }
+}

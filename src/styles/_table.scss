@@ -1,0 +1,43 @@
+$primary: #1c939b;
+$grey: #dee2e6;
+
+.table-efishery {
+  padding-bottom: 25px;
+  margin-top: 3rem;
+
+  .table-title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 20px;
+  }
+
+  .table {
+    thead {
+      tr {
+        background-color: $primary;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: #fff;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          text-transform: uppercase;
+          border-left: 1px solid $grey;
+          border-right: 1px solid $grey;
+          border-bottom: 1px solid $grey;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    overflow: auto;
+    .table-title {
+      font-size: 15px;
+    }
+  }
+}
