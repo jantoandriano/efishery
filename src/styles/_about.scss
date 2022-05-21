@@ -1,0 +1,22 @@
+.about-container {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .about-wrapper {
+    text-align: center;
+
+    .about-logo {
+      margin-top: 3rem;
+    }
+    .about-heading {
+      margin-top: 2rem;
+    }
+  }
+  @media (max-width: 640px) {
+    .about-logo {
+      width: 80%;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import LogoFish from "./assets/images/logo-fish-green.png";
 
 import Home from "./pages/Home";
+import About from "./pages/About";
 
 const App = () => {
   const [isCollapsed, setCollapsed] = useState(true);
@@ -45,6 +46,7 @@ const App = () => {
             >
               <Routes>
                 <Route path="/" exact={true} element={<Home />} />
+                <Route path="/about" exact={true} element={<About />} />
               </Routes>
             </Suspense>
           </div>
