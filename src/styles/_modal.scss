@@ -133,6 +133,17 @@
   .btn-success {
     background-color: $primary;
   }
+  .add-new-form {
+    .col-sm-8 {
+      display: flex;
+      button {
+        margin-left: auto;
+        @media (max-width: 640px) {
+          margin: auto;
+        }
+      }
+    }
+  }
   > div {
     @media (max-width: 640px) {
       justify-content: center;
