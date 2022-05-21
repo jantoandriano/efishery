@@ -1,7 +1,7 @@
 import create from "zustand";
 import baseApi from "../configs/api";
 
-const useStore = create((set) => ({
+const useListData = create((set) => ({
   listData: [],
   fetchList: async () => {
     const response = await baseApi.get("list");
@@ -19,4 +19,4 @@ const useStore = create((set) => ({
     set({ listData: payload });
   },
 }));
-export default useStore;
+export default useListData;
