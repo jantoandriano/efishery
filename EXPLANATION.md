@@ -4,7 +4,7 @@
 
 Sebelum masuk ke tampilan utama user diliatkan loading, ketika request data sudah selesai, user dapat melihat list tabel dari data perikanan indonesia .
 
-<img width="1440" alt="main-screen" src="https://user-images.githubusercontent.com/38934947/169653842-abdb13a1-e250-45e2-a8d1-6064f551c808.png">
+<img width="1440" alt="Screen Shot 2022-05-21 at 22 21 08" src="https://user-images.githubusercontent.com/38934947/169655847-a6914a7e-02f6-4565-b85d-cd2e765947cc.png">
 
 Adapun fitur-fitur di halaman utama ini yang dapat digunakan:
 
@@ -20,7 +20,7 @@ Fitur ini digunakan untuk mencari atau mengfilter data di tabel dengan mengetik 
 **Tambah Data**
 Fitur ini digunakan untuk menambah data di list tabel, user dapat mengklik tombol "Tambah Data", terus mengisi inputan data yg tersedia dengan benar, terus mengklik tombol "Simpan".
 
-<img width="1440" alt="add-data" src="https://user-images.githubusercontent.com/38934947/169653963-7db805b3-e248-433d-950d-da4bfb805c09.png">
+<img width="1440" alt="Screen Shot 2022-05-21 at 22 22 40" src="https://user-images.githubusercontent.com/38934947/169655895-19cd500b-fd0a-40f5-b324-83a66db1edcc.png">
 
 # Fitur Lainnya
 
