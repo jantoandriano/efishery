@@ -39,6 +39,6 @@ User dapat menikmati fitur-fitur ini di layar hp. Yang perlu diketahui di bagian
 
 <img width="298" alt="Screen Shot 2022-05-21 at 21 37 35" src="https://user-images.githubusercontent.com/38934947/169654193-2bf018a0-9666-49a1-a464-58167fbf3c7c.png">
 
-<img width="299" alt="Screen Shot 2022-05-21 at 21 37 50" src="https://user-images.githubusercontent.com/38934947/169654216-c58a220c-406a-489f-a4c0-6736c1a6b33b.png">
+<img width="299" alt="Screen Shot 2022-05-21 at 21 57 15" src="https://user-images.githubusercontent.com/38934947/169655029-1eb22fdf-fe3e-4d23-9350-1a0223640ff0.png">
 
 **Best regards, Janto**
