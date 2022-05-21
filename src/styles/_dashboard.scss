@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.content {
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+  overflow-x: hidden;
+  transition: all 0.3s;
+}

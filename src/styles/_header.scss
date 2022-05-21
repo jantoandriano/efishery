@@ -1,0 +1,40 @@
+$primary: #1c939b;
+
+.navbar {
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+
+  .navbar-title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+
+  .btn {
+    background-color: $primary;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  }
+
+  @media (max-width: 640px) {
+    .navbar {
+      padding: 0.5rem 0rem;
+    }
+    .navbar-title {
+      font-size: 15px;
+      margin-bottom: 0;
+    }
+    .btn-collapse {
+      display: none;
+    }
+    .container-fluid {
+      justify-content: center;
+    }
+  }
+}
+
+.page-title {
+  @media (max-width: 640px) {
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+}
