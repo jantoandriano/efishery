@@ -40,7 +40,7 @@ const AddData = (props) => {
   };
 
   return (
-    <div className={"add-list-page"}>
+    <div className="add-list-page">
       {isReady && (
         <>
           <div className="d-flex align-items-center mb-4">
@@ -52,7 +52,7 @@ const AddData = (props) => {
             </button>
             <h1 className="page-title mb-0">Tambahkan list baru</h1>
           </div>
-          <div className={"add-new-form"}>
+          <div className="add-new-form">
             <JsonToForm model={listForm} onSubmit={submit} />
           </div>
         </>
