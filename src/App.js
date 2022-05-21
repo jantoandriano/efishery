@@ -1,9 +1,14 @@
+import React from "react";
+import Home from "./pages/Home";
+
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Welcome</p>
-      </header>
+    <div className="wrapper">
+      <div className="content">
+        <div className="content-page">
+          <Home />
+        </div>
+      </div>
     </div>
   );
 };
