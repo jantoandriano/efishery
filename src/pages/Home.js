@@ -49,6 +49,7 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [listForm, setlistForm] = useState(form);
   const [isReady, setReady] = useState(false);
+  const [refresh, setRefresh] = useState("0");
   const { listAreas, fetchAreas } = useListAreas((state) => state);
   const { listSizes, fetchSizes } = useListSizes((state) => state);
   const { listData, fetchList } = useListData((state) => state);
@@ -75,7 +76,7 @@ const Home = () => {
 
   useEffect(() => {
     fetchList();
-  }, [fetchList]);
+  }, [fetchList, refresh]);
 
   const handleOpenModal = () => {
     setIsOpen(!isOpen);
@@ -97,7 +98,12 @@ const Home = () => {
       </div>
       {isOpen && (
         <Modal setIsOpen={setIsOpen} isLoading={isReady}>
-          <AddData listForm={listForm} isReady={isReady} />
+          <AddData
+            listForm={listForm}
+            isReady={isReady}
+            handleOpenModal={handleOpenModal}
+            setRefresh={setRefresh}
+          />
         </Modal>
       )}
     </>

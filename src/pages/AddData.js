@@ -1,14 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+
 import JsonToForm from "json-reactform";
 import baseApi from "../configs/api";
 
 const AddData = (props) => {
-  const { listForm, isReady } = props;
+  const { listForm, isReady, handleOpenModal, setRefresh } = props;
 
   const navigate = useNavigate();
 
-  const submit = (params) => {
+  const submit = async (params) => {
     const payload = [
       {
         uuid: Date.now(),
@@ -22,21 +23,20 @@ const AddData = (props) => {
       },
     ];
 
-    baseApi
-      .post("list", payload, {
+    try {
+      const response = await baseApi.post("list", payload, {
         headers: {
           "Content-Type": "application/json",
         },
-      })
-      .then(
-        (response) => {
-          console.log(response);
-          navigate.push("/");
-        },
-        (error) => {
-          console.log(error);
-        }
-      );
+      });
+      if (response.status === 200) {
+        navigate("/");
+        handleOpenModal(false);
+        setRefresh("1");
+      }
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
