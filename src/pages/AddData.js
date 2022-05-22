@@ -1,8 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
 import JsonToForm from "json-reactform";
 import baseApi from "../configs/api";
+import toastAlert from "../helper/toast";
 
 const AddData = (props) => {
   const { listForm, isReady, handleOpenModal, setRefresh } = props;
@@ -22,7 +22,7 @@ const AddData = (props) => {
         timestamp: Date.now(),
       },
     ];
-
+    toastAlert();
     try {
       const response = await baseApi.post("list", payload, {
         headers: {
@@ -31,8 +31,11 @@ const AddData = (props) => {
       });
       if (response.status === 200) {
         navigate("/");
+        toastAlert();
         handleOpenModal(false);
         setRefresh("1");
+      } else {
+        console.log(response);
       }
     } catch (error) {
       console.log(error);
