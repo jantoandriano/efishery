@@ -1,6 +1,9 @@
 import React from "react";
 
-const Modal = ({ setIsOpen, children }) => {
+const Modal = ({ setIsOpen, isOpen, children }) => {
+  if (!isOpen) {
+    return <></>;
+  }
   return (
     <>
       <div className="modal-dark" onClick={() => setIsOpen(false)} />

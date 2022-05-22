@@ -2,6 +2,7 @@ import React from "react";
 import { useTable, usePagination, useFilters } from "react-table";
 import Pagination from "../components/Pagination";
 import { DefaultColumnFilter } from "./Filter";
+import LogoFish from "../assets/images/logo-fish-green.png";
 
 const Table = (props) => {
   const columns = React.useMemo(
@@ -67,6 +68,14 @@ const Table = (props) => {
     useFilters,
     usePagination
   );
+
+  if (!props.data.length) {
+    return (
+      <div className="page-loading">
+        <img src={LogoFish} alt="logoFish" />
+      </div>
+    );
+  }
 
   return (
     <>
